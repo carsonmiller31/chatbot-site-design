@@ -53,9 +53,9 @@ export default function Page() {
   }
 
   return (
-    <div className="flex h-screen bg-background">
+    <div className="flex h-screen bg-background overflow-hidden">
       {/* Sidebar */}
-      <aside className="w-[280px] bg-gradient-to-b from-[#0077CC] to-[#005599] text-white flex flex-col">
+      <aside className="w-[280px] flex-shrink-0 bg-gradient-to-b from-[#0077CC] to-[#005599] text-white flex flex-col">
         <div className="flex-1 p-4">
           <div className="flex items-center gap-2 mb-6 px-2">
             <Menu className="h-5 w-5" />
@@ -92,7 +92,7 @@ export default function Page() {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col">
+      <main className="flex-1 flex flex-col overflow-hidden">
         {/* Header */}
         <header className="h-16 border-b flex items-center justify-between px-6">
           <div className="flex items-center gap-2">
@@ -108,7 +108,7 @@ export default function Page() {
         </header>
 
         {/* Chat Area */}
-        <div className="flex-1 flex flex-col items-center justify-center p-6">
+        <div className="flex-1 flex flex-col items-center justify-center p-6 overflow-y-auto">
           <div className="w-full max-w-4xl flex flex-col items-center justify-center space-y-8">
             {/* Bot Icon and Title */}
             <div className="flex flex-col items-center space-y-4">
