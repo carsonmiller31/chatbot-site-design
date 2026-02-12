@@ -23,20 +23,20 @@ export default function Page() {
 
   const navItems = [
     { id: 'home', label: 'Home', icon: Home },
-    { id: 'help', label: 'Help Guides', icon: BookOpen },
-    { id: 'tech', label: 'Tech Guides', icon: Wrench },
-    { id: 'forms', label: 'Support Forms', icon: FileText },
-    { id: 'map', label: 'Campus Map', icon: Map },
+    { id: 'help', label: 'Help Center', icon: BookOpen },
+    { id: 'tech', label: 'Resources', icon: Wrench },
+    { id: 'forms', label: 'Contact Forms', icon: FileText },
+    { id: 'map', label: 'Site Map', icon: Map },
   ]
 
   const suggestions = [
     {
-      title: 'Financial Aid',
-      description: 'How do I apply for Pell Grants?'
+      title: 'Getting Started',
+      description: 'How can I get started with your services?'
     },
     {
-      title: 'Registration',
-      description: 'Where do I go to register for classes?'
+      title: 'Account Help',
+      description: 'I need help with my account settings.'
     },
     {
       title: 'Live Agent',
@@ -98,7 +98,7 @@ export default function Page() {
           <div className="flex items-center gap-2">
             <Bot className="h-5 w-5 text-primary" />
             <h1 className="font-semibold text-foreground">
-              BYUI Support Agent{' '}
+              AI Support Agent{' '}
               <span className="text-muted-foreground italic">(Beta)</span>
             </h1>
           </div>
